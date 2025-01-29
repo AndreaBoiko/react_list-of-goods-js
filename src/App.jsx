@@ -61,7 +61,10 @@ export const App = () => {
         </button>
         {reverse || sort ? (
           <button
-            onClick={() => (setSort(''), setReverse(false))}
+            onClick={() => {
+              setSort('');
+              setReverse(false);
+            }}
             type="button"
             className="button is-danger is-light"
           >
